@@ -89,6 +89,7 @@ function dmg(){
     {
         monster_HP -= 1;
     }
-    document.getElementById("bar").value = monster_HP;
-    document.getElementById("bar").max = monster[4];
+    document.getElementById("HPBar").value = monster_HP;
+    document.getElementById("HPBar").max = monster[4];
+    document.getElementById("HPLabel").textContent = monster_HP+"/"+monster[4];
 }
