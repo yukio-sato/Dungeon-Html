@@ -22,3 +22,14 @@ button{
     background-color: rgba(0, 255, 128, 1);
     font-size: large;
 }
+
+#bar{
+    background: greenyellow;
+}
+
+#bar::-webkit-progress-value {
+    background: greenyellow;
+}
+#bar::-webkit-progress-bar {
+    background: red;
+}
