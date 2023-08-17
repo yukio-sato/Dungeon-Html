@@ -23,13 +23,24 @@ button{
     font-size: large;
 }
 
-#bar{
-    background: greenyellow;
+.UTBar{
+    background: lime;
+    margin-left: 0%;
 }
 
-#bar::-webkit-progress-value {
-    background: greenyellow;
+.UTBar::-webkit-progress-value {
+    background: lime;
+    margin-left: 0%;
 }
-#bar::-webkit-progress-bar {
+.UTBar::-webkit-progress-bar {
     background: red;
+    margin-left: 0%;
+}
+
+.UTbutton{
+    background-color: black;
+    border: solid 3px orange;
+    color: orange;
+    font-size: xx-large;
+    margin-top: 0%;
 }
