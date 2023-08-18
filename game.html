@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="motor.js" type="text/javascript"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');</style>
     <title>Jogo</title>
 </head>
-<body onload="updt()" style="background-color: black;">
+<body onload="begin()" style="background-color: black;">
     <center>
         <img id="Img" src="" alt="Imagem Ilustrativa" style="width: 200px;height: 200px;">
         <h1 id="Nm" style="color: white"></h1>
     </center>
         <progress class="UTBar" id="HPBar" min="0" value="100" max="100" style="height: 25px;margin-left: 45.5%;">  
         </progress>
+        <label id="HPLabel" style="margin-left: 1%;color: white;">0/X</label>
         <center>
-        <h3 id="HPLabel" style="margin-top: -1.25%;margin-left: 12.5%;color: white;">0/X</h3>
-        <h4 id="HPLabel" style="background-color: black;color: white;width: 50%;height: 200px;font-size: x-large;border: solid 2px white;text-align: justify;">test</h4>
+        <h4 id="Interact" style="background-color: black;color: white;width: 50%;height: 200px;border: solid 2px white;text-align: justify;">test</h4>
         </center>
-        <progress class="UTBar" id="HPBarPlayer" min="0" value="100" max="100" style="height: 25px;margin-left: 45.5%;">  
+        <div>
+
+        <progress class="UTBar" id="HPBarPlayer" min="0" value="100" max="100" style="height: 25px;margin-left: 45.5%;width: 7.5%;">  
         </progress>
+        <label id="LVPLayer" style="margin-top: -5%;margin-left: -12.5%;color: white;">LV 1</label>
+        <label id="HPLabelPlayer" style="margin-top: 0%;margin-left: 10%;color: white;">0/X</label>
+        <label id="GoldPlayer" style="margin-top: 0%;margin-left: 5%;color: gold;">0 G</label>
+        </div>
         <center>
-        <h3 id="HPLabelPlayer" style="margin-top: -1.25%;margin-left: 12.5%;color: white;">0/X</h3>
+
+        <br>
         <div>
             <button class="UTbutton" onclick="back()">revive</button>
             <button class="UTbutton" onclick="dmg()">dmg</button>

@@ -1,7 +1,13 @@
-h1,h2,h3,h4,h5,h6,button,label{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-variant: small-caps;
+body{
+    position:relative;
 }
+
+h1,h2,h3,h4,h5,h6,button,label{
+    font-family: 'Press Start 2P',cursive;
+    font-variant: small-caps;
+    font-size: 100%;
+}
+
 button{
     margin-top: 2%;
     width: 5%;
@@ -41,6 +47,5 @@ button{
     background-color: black;
     border: solid 3px orange;
     color: orange;
-    font-size: xx-large;
     margin-top: 0%;
 }
