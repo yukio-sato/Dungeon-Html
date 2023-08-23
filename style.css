@@ -34,11 +34,15 @@ button{
     margin-left: 0%;
 }
 
-.UTBar::-webkit-progress-value {
+.UTBar[KR="false"]::-webkit-progress-value{
     background: lime;
     margin-left: 0%;
 }
-.UTBar::-webkit-progress-bar {
+.UTBar[KR="true"]::-webkit-progress-value{
+    background: magenta;
+    margin-left: 0%;
+}
+.UTBar::-webkit-progress-bar{
     background: red;
     margin-left: 0%;
 }
@@ -47,5 +51,45 @@ button{
     background-color: black;
     border: solid 3px orange;
     color: orange;
+    font-weight: none;
+    text-align: center;
+    font-size: small;
     margin-top: 0%;
+    margin-left: 1%;
+}
+.UTbutton:focus-visible{
+    background-color: black;
+    border: solid 3px yellow;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+#Img[damaged='false']{
+    filter: opacity(1);
+    filter: saturate(1);
+    filter: brightness(1);
+    transition: all 1s ease-in-out;
+}
+#Img[damaged='true']{
+    filter: opacity(0);
+    filter: saturate(0);
+    filter: brightness(0);
+    transition: all 0.5s ease-in-out;
+}
+#mainBody[damaged='true']{
+    background-color: red;
+    filter: opacity(0);
+    filter: saturate(0);
+    filter: brightness(0);
+    transition: all 0.5s ease-in-out;
+}
+#mainBody[damaged='false']{
+    background-color: black;
+    filter: opacity(1);
+    filter: saturate(1);
+    filter: brightness(1);
+    transition: all 1s ease-in-out;
 }
