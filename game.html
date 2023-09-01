@@ -10,27 +10,32 @@
     <title>Jogo</title>
 </head>
 <body onload="begin()" id="mainBody" damaged="false">
-    <center>
-        <img id="Img" src="" alt="Imagem Ilustrativa" style="width: 200px;height: 200px;" damaged="false">
-        <h1 id="Nm" style="color: white"></h1>
-    </center>
-    <progress class="UTBar" id="HPBar" min="0" value="100" max="100" style="height: 25px;margin-left: 45.5%;" KR="false"></progress>
-    <label id="HPLabel" style="margin-left: 1%;color: white;">0/X</label>
-    <center>
-        <h4 id="Interact" style="background-color: black;color: white;width: 50%;height: 200px;border: solid 2px white;text-align: justify;">test</h4>
-    </center>
-    <div>
-    <label id="LVPlayer" style="margin-top: -5%;margin-left: 27.5%;color: white;">LV 1</label>
-    <label id="ATPlayer" style="margin-top: 0%;margin-left: 1.5%;color: rgb(255, 61, 61);">AT</label>
-    <label id="DFPlayer" style="margin-top: 0%;margin-left: 1.5%;color: rgb(121, 121, 255);">DF</label>
-    <progress class="UTBar" id="HPBarPlayer" min="0" value="100" max="100" style="height: 25px;margin-left: 1.35%;" KR="false"></progress>
-    <label id="HPLabelPlayer" style="margin-top: 0%;margin-left: 1.25%;color: white;">0/X</label>
-    <label id="KRPlayer" style="margin-top: 0%;margin-left: 1.25%;color: white;"></label>
-    <label id="GoldPlayer" style="margin-top: 0%;margin-left: 5%;color: gold;">0 G</label>
+    <img id="Img" src="" alt="Imagem Ilustrativa" damaged="false">
+    <div class="MonsterContainer">
+        <label id="Nm"></label>
+        <progress class="UTBar" id="HPBar" min="0" value="100" max="100" KR="false"></progress>
+        <label id="HPLabel">0/X</label>
+    </div>
+
+    <div class="InteractContainer">
+        <label id="Interact">test</label>
+    </div>
+
+    <div class="PlayerContainer">
+    <label id="LVPlayer">LV 1</label>
+    <label id="ATPlayer">AT</label>
+    <label id="DFPlayer">DF</label>
+    <progress class="UTBar" id="HPBarPlayer" min="0" value="100" max="100" KR="false"></progress>
+    <label id="HPLabelPlayer">0/X</label>
+    <label id="KRPlayer"></label>
+    <label id="GoldPlayer">0 G</label>
     </div>
     <br>
-    <center>
-        <button class="UTbutton" onclick="back()">revive</button><button class="UTbutton" onclick="dmg()">dmg</button><button class="UTbutton">teste</button><button class="UTbutton">teste</button>
-    </center>
+    <div class="ButtonGroup">
+        <button class="UTbutton" onclick="back()">revive</button>
+        <button class="UTbutton" onclick="dmg()">dmg</button>
+        <button class="UTbutton">teste</button>
+        <button class="UTbutton">teste</button>
+    </div>
 </body>
 </html>
